@@ -1,0 +1,77 @@
+{
+  "name": "react-typescript-library-rollup-jest",
+  "version": "0.0.1",
+  "description": "Example of NPM React library built with Babel, Rollup, Jest, Typescript, ESLint and Travis CI",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmarceli/npm-lib-package-boilerplate.git"
+  },
+  "author": "Jan Grzegorowski <grzegorowski@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "npx rimraf lib",
+    "test": "npx jest src",
+    "test:watch": "npx jest src --watch --notify",
+    "cover": "npx jest src --coverage",
+    "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx",
+    "build": "npx rollup -c",
+    "precommit": "npm run lint && npm run test",
+    "prepublishOnly": "npm run clean && npm run lint && npm run test && npm run build"
+  },
+  "engines": {
+    "node": ">= 8.x"
+  },
+  "keywords": [
+    "lib-package-boilerplate",
+    "package-boilerplate",
+    "nodejs-package-boilerplate"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-typescript": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-typescript": "^3.0.0",
+    "@testing-library/jest-dom": "^5.1.1",
+    "@testing-library/react": "^9.5.0",
+    "eslint-plugin-typescript": "^0.14.0",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@typescript-eslint/eslint-plugin": "^2.22.0",
+    "@typescript-eslint/parser": "^2.22.0",
+    "autoprefixer": "^9.7.4",
+    "babel-jest": "^25.1.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-airbnb-typescript": "^7.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-jest": "^23.8.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.32.0",
+    "rollup-plugin-babel": "4",
+    "rollup-plugin-postcss": "^2.4.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run precommit"
+    }
+  }
+}
