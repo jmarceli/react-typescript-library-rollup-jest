@@ -4,6 +4,12 @@
 
 Read detailed description/tutorial on https://www.grzegorowski.com/publishing-react-typescript-library-rollup-jest/ or check example package https://github.com/jmarceli/react-typescript-library-rollup-jest.
 
+You can install this package from NPM using `npm i react-typescript-library-rollup-jest` to see that it is working fine.
+
+Here is an example:
+
+[![Edit nice-field-qw8cm](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/nice-field-qw8cm?fontsize=14&hidenavigation=1&theme=dark)
+
 # Usage
 
 This is a starting point for creating your own custom React Typescript components package, so you can easily share them with community through the NPM.
