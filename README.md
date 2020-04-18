@@ -2,7 +2,7 @@
 
 ![](https://github.com/jmarceli/react-typescript-library-rollup-jest/workflows/Test%20application%20with%20Github%20Actions/badge.svg) [![dependencies Status](https://david-dm.org/jmarceli/react-typescript-library-rollup-jest/status.svg)](https://david-dm.org/jmarceli/react-typescript-library-rollup-jest) [![devDependencies Status](https://david-dm.org/jmarceli/react-typescript-library-rollup-jest/dev-status.svg)](https://david-dm.org/jmarceli/react-typescript-library-rollup-jest?type=dev) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Read detailed description/tutorial on https://www.grzegorowski.com/publishing-react-typescript-library-rollup-jest/ or check example package https://github.com/jmarceli/react-typescript-library-rollup-jest.
+Read detailed description/tutorial on https://www.grzegorowski.com/react-typescript-library-rollup-jest-part-1 or check example package https://github.com/jmarceli/jmarceli-react-ts-library.
 
 You can install this package from NPM using `npm i react-typescript-library-rollup-jest` to see that it is working fine.
 
